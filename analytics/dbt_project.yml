@@ -1,0 +1,27 @@
+# 1. Name your project (how dbt sees it internally)
+name: 'crypto_analytics'
+
+# 2. THIS IS CRITICAL: Match the profile name in your ~/.dbt/profiles.yml
+profile: 'brahim'
+
+# Keep these paths as they are
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# 3. Update the seeds configuration block
+seeds:
+  crypto_analytics:  # Match the 'name' from line 1
+    +schema: raw
+
+# 4. Update the models configuration block
+models:
+  crypto_analytics:  # Match the 'name' from line 1
+    # Config for your layers
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

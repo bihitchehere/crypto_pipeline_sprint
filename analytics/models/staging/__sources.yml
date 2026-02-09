@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: crypto_source
+    database: crypto_db
+    schema: staging      # This MUST match the 'dataset_name' from ingest.py
+    tables:
+      - name: raw_prices # This MUST match the table name dlt created

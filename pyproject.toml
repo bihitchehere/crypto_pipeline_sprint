@@ -1,0 +1,14 @@
+[project]
+name = "crypto-pipeline-sprint"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-core>=1.11.3",
+    "dbt-duckdb>=1.10.0",
+    "dlt[motherduck]>=1.21.0",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.2",
+    "requests>=2.32.5",
+]

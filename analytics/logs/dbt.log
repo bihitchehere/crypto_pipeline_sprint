@@ -1,0 +1,202 @@
+==================== 2026-02-09T11:31:02.307834Z | 019c422b-5605-7971-a7d3-b57c726e163f ====================
+11:31:02.313221 [info ]: Installing dbt project and profile setup
+11:31:02.352881 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+11:31:02.354728 [info ]: Success Project created successfully!
+11:31:02.354906 [info ]: Info Project name: jaffle_shop
+11:31:02.354946 [info ]: Info Project directory: jaffle_shop
+11:31:02.354975 [info ]: Info Setting up your profile...
+11:31:02.357193 [info ]: Loading ~/.dbt/profiles.yml
+11:31:02.359652 [info ]: Info Creating new profile...
+11:32:21.829894 [info ]: Found dbt_cloud.yml configuration
+11:32:27.171165 [error]: dbt1001: Failed to get project selection: IO error: read interrupted
+11:32:27.274734 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [1m 25s]
+[0m13:11:27.293289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b3f0ac6cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b3f2380cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b3efaffc50>]}
+
+
+============================== 13:11:27.299384 | 0112383c-0731-4bb0-9143-55612c7c86a1 ==============================
+[0m13:11:27.299384 [info ] [MainThread]: Running with dbt=1.11.3
+[0m13:11:27.301512 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'use_colors': 'True', 'debug': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'printer_width': '80', 'log_cache_events': 'False', 'version_check': 'True', 'no_print': 'None', 'log_format': 'default', 'quiet': 'False', 'empty': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/bihitche/.dbt', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'target_path': 'None', 'warn_error': 'None'}
+[0m13:11:27.320126 [info ] [MainThread]: dbt version: 1.11.3
+[0m13:11:27.320959 [info ] [MainThread]: python version: 3.13.12
+[0m13:11:27.321756 [info ] [MainThread]: python path: /home/bihitche/Desktop/crypto_pipeline_sprint/.venv/bin/python
+[0m13:11:27.322490 [info ] [MainThread]: os info: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
+[0m13:11:27.535220 [info ] [MainThread]: Using profiles dir at /home/bihitche/.dbt
+[0m13:11:27.535911 [info ] [MainThread]: Using profiles.yml file at /home/bihitche/.dbt/profiles.yml
+[0m13:11:27.536522 [info ] [MainThread]: Using dbt_project.yml file at /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/dbt_project.yml
+[0m13:11:27.538589 [info ] [MainThread]: adapter type: duckdb
+[0m13:11:27.539166 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:11:27.539911 [info ] [MainThread]: Configuration:
+[0m13:11:27.540767 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:11:27.541604 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:11:27.542346 [info ] [MainThread]: Required dependencies:
+[0m13:11:27.543242 [debug] [MainThread]: Executing "git --help"
+[0m13:11:27.549623 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:11:27.550569 [debug] [MainThread]: STDERR: "b''"
+[0m13:11:27.551354 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:11:27.552139 [info ] [MainThread]: Connection:
+[0m13:11:27.552948 [info ] [MainThread]:   database: crypto_db
+[0m13:11:27.553898 [info ] [MainThread]:   schema: main
+[0m13:11:27.554668 [info ] [MainThread]:   path: md:crypto_db
+[0m13:11:27.555420 [info ] [MainThread]:   config_options: None
+[0m13:11:27.556350 [info ] [MainThread]:   extensions: None
+[0m13:11:27.557103 [info ] [MainThread]:   settings: {}
+[0m13:11:27.557847 [info ] [MainThread]:   external_root: .
+[0m13:11:27.558589 [info ] [MainThread]:   use_credential_provider: None
+[0m13:11:27.560170 [info ] [MainThread]:   attach: None
+[0m13:11:27.560976 [info ] [MainThread]:   filesystems: None
+[0m13:11:27.562595 [info ] [MainThread]:   remote: None
+[0m13:11:27.563416 [info ] [MainThread]:   plugins: [{'module': 'motherduck', 'alias': None, 'config': None}]
+[0m13:11:27.564201 [info ] [MainThread]:   disable_transactions: False
+[0m13:11:27.565234 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:11:27.722525 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:11:27.767276 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:11:27.768463 [debug] [MainThread]: On debug: select 1 as id
+[0m13:11:27.769390 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:11:40.777783 [debug] [MainThread]: SQL status: OK in 13.008 seconds
+[0m13:11:40.779990 [debug] [MainThread]: On debug: Close
+[0m13:11:40.780947 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:11:40.781962 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:11:40.782789 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bihitche/Desktop/crypto_pipeline_sprint/analytics/dbt_project.yml> not found
+
+[0m13:11:40.784690 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 13.668881, "process_in_blocks": "464", "process_kernel_time": 0.46262, "process_mem_max_rss": "176860", "process_out_blocks": "16", "process_user_time": 4.121981}
+[0m13:11:40.786239 [debug] [MainThread]: Command `dbt debug` failed at 13:11:40.786043 after 13.67 seconds
+[0m13:11:40.786995 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:11:40.788119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b3ef90b360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b3ef8e7e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b3ef921150>]}
+[0m13:11:40.789508 [debug] [MainThread]: Flushing usage events
+[0m13:11:41.530497 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:13:02.107655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb355ed2cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb357780e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb354f0bb10>]}
+
+
+============================== 13:13:02.111611 | 64520fea-4ca5-4970-9de8-86d50a5f76c7 ==============================
+[0m13:13:02.111611 [info ] [MainThread]: Running with dbt=1.11.3
+[0m13:13:02.112778 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'invocation_command': 'dbt debug', 'version_check': 'True', 'debug': 'False', 'warn_error': 'None', 'empty': 'None', 'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'log_format': 'default', 'printer_width': '80', 'fail_fast': 'False', 'profiles_dir': '/home/bihitche/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'target_path': 'None', 'indirect_selection': 'eager'}
+[0m13:13:02.124170 [info ] [MainThread]: dbt version: 1.11.3
+[0m13:13:02.124841 [info ] [MainThread]: python version: 3.13.12
+[0m13:13:02.125373 [info ] [MainThread]: python path: /home/bihitche/Desktop/crypto_pipeline_sprint/.venv/bin/python
+[0m13:13:02.126005 [info ] [MainThread]: os info: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
+[0m13:13:02.324801 [info ] [MainThread]: Using profiles dir at /home/bihitche/.dbt
+[0m13:13:02.325797 [info ] [MainThread]: Using profiles.yml file at /home/bihitche/.dbt/profiles.yml
+[0m13:13:02.326857 [info ] [MainThread]: Using dbt_project.yml file at /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/dbt_project.yml
+[0m13:13:02.329618 [info ] [MainThread]: adapter type: duckdb
+[0m13:13:02.330535 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:13:02.331546 [info ] [MainThread]: Configuration:
+[0m13:13:02.332896 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:13:02.333667 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:13:02.334364 [info ] [MainThread]: Required dependencies:
+[0m13:13:02.334991 [debug] [MainThread]: Executing "git --help"
+[0m13:13:02.339180 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:13:02.340263 [debug] [MainThread]: STDERR: "b''"
+[0m13:13:02.341047 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:13:02.341829 [info ] [MainThread]: Connection:
+[0m13:13:02.342626 [info ] [MainThread]:   database: crypto_db
+[0m13:13:02.343505 [info ] [MainThread]:   schema: main
+[0m13:13:02.344465 [info ] [MainThread]:   path: md:crypto_db
+[0m13:13:02.345390 [info ] [MainThread]:   config_options: None
+[0m13:13:02.346193 [info ] [MainThread]:   extensions: None
+[0m13:13:02.347097 [info ] [MainThread]:   settings: {}
+[0m13:13:02.347959 [info ] [MainThread]:   external_root: .
+[0m13:13:02.348876 [info ] [MainThread]:   use_credential_provider: None
+[0m13:13:02.349594 [info ] [MainThread]:   attach: None
+[0m13:13:02.350254 [info ] [MainThread]:   filesystems: None
+[0m13:13:02.350950 [info ] [MainThread]:   remote: None
+[0m13:13:02.351645 [info ] [MainThread]:   plugins: [{'module': 'motherduck', 'alias': None, 'config': None}]
+[0m13:13:02.352479 [info ] [MainThread]:   disable_transactions: False
+[0m13:13:02.353438 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:13:02.518959 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:13:02.549641 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:13:02.550177 [debug] [MainThread]: On debug: select 1 as id
+[0m13:13:02.550648 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:13:30.026217 [debug] [MainThread]: SQL status: OK in 27.475 seconds
+[0m13:13:30.028806 [debug] [MainThread]: On debug: Close
+[0m13:13:30.030174 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:13:30.030971 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:13:30.032156 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bihitche/Desktop/crypto_pipeline_sprint/analytics/dbt_project.yml> not found
+
+[0m13:13:30.034613 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 28.011574, "process_in_blocks": "1800", "process_kernel_time": 0.435567, "process_mem_max_rss": "176684", "process_out_blocks": "24", "process_user_time": 3.479569}
+[0m13:13:30.036150 [debug] [MainThread]: Command `dbt debug` failed at 13:13:30.035884 after 28.01 seconds
+[0m13:13:30.037372 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:13:30.038782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb354d23230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb354cf7e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb354b35150>]}
+[0m13:13:30.040231 [debug] [MainThread]: Flushing usage events
+[0m13:13:30.788850 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:14:47.583039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7216803bacf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x721681cc4cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72167f3f3c50>]}
+
+
+============================== 13:14:47.587714 | ce840437-426a-49f3-b56a-fcbdb24816b8 ==============================
+[0m13:14:47.587714 [info ] [MainThread]: Running with dbt=1.11.3
+[0m13:14:47.588818 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'use_colors': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_format': 'default', 'quiet': 'False', 'invocation_command': 'dbt debug', 'empty': 'None', 'version_check': 'True', 'warn_error': 'None', 'no_print': 'None', 'debug': 'False', 'profiles_dir': '/home/bihitche/.dbt', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'target_path': 'None', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'printer_width': '80'}
+[0m13:14:47.602673 [info ] [MainThread]: dbt version: 1.11.3
+[0m13:14:47.603638 [info ] [MainThread]: python version: 3.13.12
+[0m13:14:47.604526 [info ] [MainThread]: python path: /home/bihitche/Desktop/crypto_pipeline_sprint/.venv/bin/python
+[0m13:14:47.605373 [info ] [MainThread]: os info: Linux-6.14.0-37-generic-x86_64-with-glibc2.39
+[0m13:14:47.877089 [info ] [MainThread]: Using profiles dir at /home/bihitche/.dbt
+[0m13:14:47.878027 [info ] [MainThread]: Using profiles.yml file at /home/bihitche/.dbt/profiles.yml
+[0m13:14:47.878871 [info ] [MainThread]: Using dbt_project.yml file at /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/dbt_project.yml
+[0m13:14:47.881545 [info ] [MainThread]: adapter type: duckdb
+[0m13:14:47.882415 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:14:48.124710 [info ] [MainThread]: Configuration:
+[0m13:14:48.125393 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:14:48.126183 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:14:48.126913 [info ] [MainThread]: Required dependencies:
+[0m13:14:48.127654 [debug] [MainThread]: Executing "git --help"
+[0m13:14:48.131043 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:14:48.132091 [debug] [MainThread]: STDERR: "b''"
+[0m13:14:48.132928 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:14:48.133834 [info ] [MainThread]: Connection:
+[0m13:14:48.134635 [info ] [MainThread]:   database: crypto_db
+[0m13:14:48.135453 [info ] [MainThread]:   schema: main
+[0m13:14:48.136346 [info ] [MainThread]:   path: md:crypto_db
+[0m13:14:48.137184 [info ] [MainThread]:   config_options: None
+[0m13:14:48.137997 [info ] [MainThread]:   extensions: None
+[0m13:14:48.138871 [info ] [MainThread]:   settings: {}
+[0m13:14:48.139743 [info ] [MainThread]:   external_root: .
+[0m13:14:48.140562 [info ] [MainThread]:   use_credential_provider: None
+[0m13:14:48.141444 [info ] [MainThread]:   attach: None
+[0m13:14:48.142303 [info ] [MainThread]:   filesystems: None
+[0m13:14:48.143154 [info ] [MainThread]:   remote: None
+[0m13:14:48.144013 [info ] [MainThread]:   plugins: [{'module': 'motherduck', 'alias': None, 'config': None}]
+[0m13:14:48.144935 [info ] [MainThread]:   disable_transactions: False
+[0m13:14:48.146039 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:14:48.344831 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:14:48.381191 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:14:48.381684 [debug] [MainThread]: On debug: select 1 as id
+[0m13:14:48.382151 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:15:01.471494 [debug] [MainThread]: SQL status: OK in 13.089 seconds
+[0m13:15:01.476747 [debug] [MainThread]: On debug: Close
+[0m13:15:01.479211 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:15:01.481408 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:15:01.485151 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 14.006659, "process_in_blocks": "0", "process_kernel_time": 0.38339, "process_mem_max_rss": "178636", "process_out_blocks": "24", "process_user_time": 3.625777}
+[0m13:15:01.488951 [debug] [MainThread]: Command `dbt debug` succeeded at 13:15:01.488220 after 14.01 seconds
+[0m13:15:01.492062 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:15:01.495224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72167979a2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7216804eb2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7216797a9480>]}
+[0m13:15:01.497577 [debug] [MainThread]: Flushing usage events
+[0m13:15:02.233345 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:18:46.628381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7072041b6cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707205ac0cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7072031f3c50>]}
+
+
+============================== 13:18:46.635003 | c99842dc-3160-4695-a635-a4c81f1f3bfa ==============================
+[0m13:18:46.635003 [info ] [MainThread]: Running with dbt=1.11.3
+[0m13:18:46.635839 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'use_colors': 'True', 'version_check': 'True', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'target_path': 'None', 'no_print': 'None', 'invocation_command': 'dbt run', 'debug': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/bihitche/.dbt', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'empty': 'False', 'warn_error': 'None', 'log_cache_events': 'False'}
+[0m13:18:46.995936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c99842dc-3160-4695-a635-a4c81f1f3bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707203ed75c0>]}
+[0m13:18:47.115053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c99842dc-3160-4695-a635-a4c81f1f3bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7072032ad260>]}
+[0m13:18:47.117072 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:18:47.256559 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m13:18:47.257556 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:18:47.258239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c99842dc-3160-4695-a635-a4c81f1f3bfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707203103850>]}
+[0m13:18:49.074128 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.crypto_analytics.products' (models/marts/products.sql) depends on a node named 'stg_products' which was not found
+[0m13:18:49.075564 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.5327182, "process_in_blocks": "5984", "process_kernel_time": 0.304427, "process_mem_max_rss": "149156", "process_out_blocks": "16", "process_user_time": 3.98151}
+[0m13:18:49.076339 [debug] [MainThread]: Command `dbt run` failed at 13:18:49.076185 after 2.53 seconds
+[0m13:18:49.077183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7071efe0da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7071efe0e120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x707203207e70>]}
+[0m13:18:49.077965 [debug] [MainThread]: Flushing usage events
+[0m13:18:49.927272 [debug] [MainThread]: An error was encountered while trying to flush usage events
