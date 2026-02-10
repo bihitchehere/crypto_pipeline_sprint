@@ -1,0 +1,1 @@
+{"_invocation_id": "8089f3d5-5f14-488b-be3f-248097aeacec", "linked": {"0": {"name": "source.crypto_analytics.crypto_source.raw_prices", "type": "source", "succ": [1]}, "1": {"name": "model.crypto_analytics.stg__prices", "type": "model"}}}
