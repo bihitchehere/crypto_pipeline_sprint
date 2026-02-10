@@ -1,14 +1,12 @@
 name: Daily Crypto Pipeline
 
-# Trigger: Run every day at 8:00 AM UTC
 on:
   schedule:
     - cron: '0 8 * * *'
-  # Allow manual run from GitHub UI for testing
   workflow_dispatch:
 
 env:
-  # 1. MotherDuck Token (We will set this in GitHub Secrets later)
+  # ✅ FIX: Point to the Secret NAME, not the value
   MOTHERDUCK_TOKEN: ${{ secrets.MOTHERDUCK_TOKEN }}
 
 jobs:
@@ -16,27 +14,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Get the code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Install uv (Fast package manager)
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
 
-      # 3. Install Python & Dependencies
       - name: Install dependencies
         run: uv sync
 
-      # 4. Create Secrets File for dlt (Ingestion)
       - name: Create dlt secrets
         run: |
           mkdir -p .dlt
           echo "[destination.motherduck.credentials]" > .dlt/secrets.toml
           echo "database = 'crypto_db'" >> .dlt/secrets.toml
+          # ✅ This pulls the value from the environment variable we set above
           echo "password = '${{ secrets.MOTHERDUCK_TOKEN }}'" >> .dlt/secrets.toml
 
-      # 5. Create Profile for dbt (Transformation)
       - name: Create dbt profile
         run: |
           mkdir -p ~/.dbt
@@ -48,11 +42,9 @@ jobs:
           echo "      path: 'md:crypto_db'" >> ~/.dbt/profiles.yml
           echo "      motherduck_token: '${{ secrets.MOTHERDUCK_TOKEN }}'" >> ~/.dbt/profiles.yml
 
-      # 6. Run Ingestion
       - name: Run Ingestion (Python)
         run: uv run python ingest.py
 
-      # 7. Run Transformation
       - name: Run Transformation (dbt)
         working-directory: ./analytics
         run: uv run dbt run
