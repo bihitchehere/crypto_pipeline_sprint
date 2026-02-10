@@ -1,11 +1,10 @@
-from pydantic import BaseModel, Field
-from typing import Optional
+from pydantic import BaseModel
 
-# This class name 'Coin' matches what ingest.py is looking for
-class Coin(BaseModel):
-    id: str
-    symbol: str
-    name: str
-    current_price: float = Field(gt=0) # Ensures price is positive
-    market_cap: float
-    price_change_percentage_24h: Optional[float] = 0.0
+class CryptoCoin(BaseModel):
+    # The Rules:
+    id: str                 # Must be text
+    symbol: str             # Must be text
+    current_price: float    # Must be a number (no "banana")
+    market_cap: int         # Must be an integer
+    total_volume: int       # Must be an integer
+    price_change_percentage_24h: float  # Must be a number (no "banana")
