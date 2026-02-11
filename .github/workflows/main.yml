@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p .dlt
           echo "[destination.motherduck.credentials]" > .dlt/secrets.toml
-          echo "database = 'crypto_db'" >> .dlt/secrets.toml
+          echo "database = 'crypto_database'" >> .dlt/secrets.toml
           # ✅ This pulls the value from the environment variable we set above
           echo "password = '${{ secrets.MOTHERDUCK_TOKEN }}'" >> .dlt/secrets.toml
 
@@ -39,7 +39,7 @@ jobs:
           echo "  outputs:" >> ~/.dbt/profiles.yml
           echo "    duck:" >> ~/.dbt/profiles.yml
           echo "      type: duckdb" >> ~/.dbt/profiles.yml
-          echo "      path: 'md:crypto_db'" >> ~/.dbt/profiles.yml
+          echo "      path: 'md:crypto_database'" >> ~/.dbt/profiles.yml
           echo "      motherduck_token: '${{ secrets.MOTHERDUCK_TOKEN }}'" >> ~/.dbt/profiles.yml
 
       - name: Run Ingestion (Python)

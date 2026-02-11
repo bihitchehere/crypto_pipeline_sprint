@@ -1,24 +1,65 @@
 import dlt
 import requests
-from models import CryptoCoin  # Import the rules above
+from models import CryptoCoin
+from pydantic import ValidationError
 
-# 1. Define where the data comes from
-@dlt.resource(write_disposition="append") # "Append" means add new rows, don't delete old ones
+@dlt.resource(table_name="raw_prices", write_disposition="append")
 def fetch_coins():
-    url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd..."
-    data = requests.get(url).json()
+    """
+    Fetches coins safely. If one coin is bad, we skip it.
+    If the API fails, we print the error instead of crashing.
+    """
+    url = "https://api.coingecko.com/api/v3/coins/markets"
+    params = {
+        "vs_currency": "usd",
+        "order": "market_cap_desc",
+        "per_page": 100,
+        "page": 1,
+        "sparkline": "false"
+    }
 
+    try:
+        # 1. Try to get data from the API
+        print(f"📡 Connecting to {url}...")
+        response = requests.get(url, params=params)
+        response.raise_for_status() # Check for 404 or 500 errors
+        data = response.json()
+
+        # 2. Check if the API sent us a list (valid) or an error dictionary (invalid)
+        if not isinstance(data, list):
+            print(f"❌ API Error: Expected a list but got: {data}")
+            return
+
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Network Error: Could not connect to CoinGecko. Reason: {e}")
+        return
+
+    # 3. Process each coin one by one
+    print(f"✅ API Success! Processing {len(data)} coins...")
+    
     for coin in data:
-        # 2. THE VALIDATION STEP
-        # This is where Pydantic checks the data against the rules
-        yield CryptoCoin(**coin) 
+        try:
+            # Validate with Pydantic
+            yield CryptoCoin(**coin)
+        except ValidationError as e:
+            # If one coin is bad, just skip it and continue!
+            print(f"⚠️ Skipping bad coin data: {coin.get('id', 'Unknown')} - {e}")
+        except Exception as e:
+            print(f"⚠️ Unexpected error on coin: {e}")
 
-# 3. The Pipeline Definition
-pipeline = dlt.pipeline(
-    pipeline_name="crypto_pipeline",
-    destination="motherduck",  # Target database
-    dataset_name="crypto_raw"  # Target Schema (Folder)
-)
+if __name__ == "__main__":
+    # Define the pipeline
+    pipeline = dlt.pipeline(
+        pipeline_name="crypto_pipeline",
+        destination="motherduck", 
+        dataset_name="crypto_raw"
+    )
 
-# 4. Run it
-info = pipeline.run(fetch_coins())
+    # Run it safely
+    try:
+        print("🚀 Starting pipeline run...")
+        load_info = pipeline.run(fetch_coins())
+        print(load_info)
+        print("🎉 SUCCESS! Data loaded to MotherDuck.")
+    except Exception as e:
+        print(f"💥 CRITICAL FAILURE: The pipeline crashed. Reason: {e}")
