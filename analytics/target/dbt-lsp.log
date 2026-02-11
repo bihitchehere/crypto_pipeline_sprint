@@ -50,3 +50,37 @@
 23:54:51.739383 [info ]: Loading ~/.dbt/profiles.yml
 23:54:53.299528 [info ]: Loading ~/.dbt/profiles.yml
 23:55:12.522818 [info ]: Loading ~/.dbt/profiles.yml
+23:55:38.707364 [info ]: Loading ~/.dbt/profiles.yml
+23:55:56.099106 [info ]: Loading ~/.dbt/profiles.yml
+23:56:05.186189 [info ]: Loading ~/.dbt/profiles.yml
+23:57:32.957928 [info ]: Loading ~/.dbt/profiles.yml
+04:06:21.445585 [info ]: Loading ~/.dbt/profiles.yml
+04:06:21.916716 [info ]: Loading ~/.dbt/profiles.yml
+04:09:35.319578 [info ]: Loading ~/.dbt/profiles.yml
+04:17:22.169403 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-02-11T04:19:53.567421Z | 4eea5b64-8493-4d84-a925-704ddb223b5f ====================
+04:19:53.568718 [info ]: Starting dbt LSP server
+04:19:53.569251 [info ]: Connecting to LSP client on port 8000
+04:19:53.569821 [info ]: Successfully connected to LSP client
+04:19:53.569851 [info ]: Creating LSP service...
+04:19:53.686578 [info ]: Creating LSP server...
+04:19:53.686607 [info ]: Starting LSP server...
+04:19:53.889304 [info ]: Started loading project
+04:19:53.894131 [info ]: Loading ~/.dbt/profiles.yml
+04:19:53.899346 [info ]: Finished loading project [  0.01s]
+04:20:20.138955 [info ]: Loading ~/.dbt/profiles.yml
+04:20:29.758175 [info ]: Loading ~/.dbt/profiles.yml
+04:22:15.549023 [info ]: Loading ~/.dbt/profiles.yml
+04:22:16.086602 [info ]: Loading ~/.dbt/profiles.yml
+04:23:09.327254 [info ]: Loading ~/.dbt/profiles.yml
+04:24:32.842619 [info ]: Loading ~/.dbt/profiles.yml
+04:24:33.064058 [info ]: Loading ~/.dbt/profiles.yml
+04:24:40.195396 [info ]: Loading ~/.dbt/profiles.yml
+04:51:51.221360 [info ]: Loading ~/.dbt/profiles.yml
+04:51:51.723054 [info ]: Loading ~/.dbt/profiles.yml
+04:51:54.541280 [info ]: Loading ~/.dbt/profiles.yml
+04:51:55.252563 [info ]: Loading ~/.dbt/profiles.yml
+04:53:17.286048 [info ]: Loading ~/.dbt/profiles.yml
+04:59:10.202629 [info ]: Loading ~/.dbt/profiles.yml
+05:01:45.294717 [info ]: Loading ~/.dbt/profiles.yml
+05:04:31.745764 [info ]: Loading ~/.dbt/profiles.yml

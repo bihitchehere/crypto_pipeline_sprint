@@ -3,6 +3,6 @@ select
     symbol,
     current_price as usd_price,
     price_change_percentage_24h as daily_change,
-    updated_at as ingested_at
-from "crypto_db"."crypto_raw"."fetch_coins" 
--- referencing the source we defined above
+    
+    now() as ingested_at 
+from "crypto_database"."crypto_raw"."raw_prices"

@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: crypto_sources
-    schema: crypto_raw      # <--- This MUST match the dataset_name in ingest.py
+    database: crypto_database  # <--- NEW! Explicitly point to the new DB
+    schema: crypto_raw         # <--- The folder dlt created
     tables:
-      - name: raw_prices   # <--- The table dlt created
+      - name: raw_prices       # <--- The table dlt created
