@@ -2,7 +2,26 @@ version: 2
 
 sources:
   - name: crypto_sources
-    database: crypto_database  # <--- NEW! Explicitly point to the new DB
-    schema: crypto_raw         # <--- The folder dlt created
+    database: crypto_database       
+    schema: crypto_raw          # <--- The folder DLT created
     tables:
-      - name: raw_prices       # <--- The table dlt created
+      - name: raw_prices       # <--- The table DLT created
+        description: "Raw crypto prices from DLT pipeline"
+
+models:
+  - name: stg_crypto_prices
+    description: "Staging table for crypto prices, incremental"
+    columns:
+      - name: crypto_symbol
+        description: "The crypto symbol like BTC, ETH"
+        tests:
+          - not_null
+      - name: crypto_timestamp
+        description: "The timestamp of the price"
+        tests:
+          - not_null
+          - unique
+      - name: price
+        description: "The crypto price in USD"
+        tests:
+          - not_null
