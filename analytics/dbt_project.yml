@@ -5,9 +5,11 @@ name: 'crypto_analytics'
 profile: 'brahim'
 
 # Keep these paths as they are
-seed-paths: ["seeds"]
+
 model-paths: ["models"]
 macro-paths: ["macros"]
+test-paths: ["tests"]
+
 clean-targets:
   - "target"
   - "dbt_packages"

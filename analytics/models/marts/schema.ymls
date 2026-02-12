@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: coin_trends
+    description: "Final table for the Streamlit dashboard"
+    columns:
+      - name: symbol
+        data_tests:
+          - unique
+          - not_null
+      - name: daily_change
+        description: "24h price change percentage"

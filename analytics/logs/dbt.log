@@ -1956,3 +1956,969 @@ alter table "crypto_database"."main"."coin_trends__dbt_tmp" rename to "coin_tren
 [0m06:05:53.088400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae38c4e71d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae38cf6c910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae38cf6cf50>]}
 [0m06:05:53.089526 [debug] [MainThread]: Flushing usage events
 [0m06:05:53.880777 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:06:09.115918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098c3d6a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098de991d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098b40fd90>]}
+
+
+============================== 00:06:09.121816 | e008c976-721e-4318-8cbd-911daefc9972 ==============================
+[0m00:06:09.121816 [info ] [MainThread]: Running with dbt=1.11.3
+[0m00:06:09.122891 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'partial_parse': 'True', 'empty': 'None', 'profiles_dir': '/home/bihitche/.dbt', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'indirect_selection': 'eager', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'printer_width': '80', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'static_parser': 'True', 'version_check': 'True', 'target_path': 'None', 'debug': 'False', 'introspect': 'True', 'use_colors': 'True'}
+[0m00:06:09.324404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e008c976-721e-4318-8cbd-911daefc9972', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098c0f3490>]}
+[0m00:06:09.369531 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:06:09.370967 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:06:09.373627 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.35713214, "process_in_blocks": "13712", "process_kernel_time": 0.342282, "process_mem_max_rss": "105932", "process_out_blocks": "184", "process_user_time": 2.815642}
+[0m00:06:09.374887 [debug] [MainThread]: Command `cli deps` succeeded at 00:06:09.374683 after 0.36 seconds
+[0m00:06:09.375960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098b05ce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098b05d260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72098b49aa50>]}
+[0m00:06:09.377100 [debug] [MainThread]: Flushing usage events
+[0m00:06:10.219955 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:10.467539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e434d2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e44f81090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e4250bb10>]}
+
+
+============================== 01:05:10.473665 | 352d22f1-99c4-4996-a6b3-ff33bbee34f0 ==============================
+[0m01:05:10.473665 [info ] [MainThread]: Running with dbt=1.11.3
+[0m01:05:10.474646 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'target_path': 'None', 'log_format': 'default', 'printer_width': '80', 'static_parser': 'True', 'no_print': 'None', 'profiles_dir': '/home/bihitche/.dbt', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'use_colors': 'True', 'invocation_command': 'dbt test', 'fail_fast': 'False', 'quiet': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'empty': 'None'}
+[0m01:05:10.817944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '352d22f1-99c4-4996-a6b3-ff33bbee34f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e431f35c0>]}
+[0m01:05:10.926647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '352d22f1-99c4-4996-a6b3-ff33bbee34f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e425b9370>]}
+[0m01:05:10.931828 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:05:11.071277 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m01:05:11.191093 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m01:05:11.191894 [debug] [MainThread]: Partial parsing: added file: crypto_analytics://tests/schema.yml
+[0m01:05:11.192445 [debug] [MainThread]: Partial parsing: added file: crypto_analytics://tests/assert_price.sql
+[0m01:05:11.422100 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'assert_high_prices' in the 'data_tests' section of file 'tests/schema.yml'
+[0m01:05:11.423358 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.crypto_analytics.assert_price' (tests/assert_price.sql) depends on a node named 'stg_prices' in package '' which was not found
+[0m01:05:11.624780 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m01:05:11.652366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '352d22f1-99c4-4996-a6b3-ff33bbee34f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e4241d550>]}
+[0m01:05:11.848417 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:05:11.852243 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:05:12.066737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '352d22f1-99c4-4996-a6b3-ff33bbee34f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e3716e990>]}
+[0m01:05:12.067890 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m01:05:12.068940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '352d22f1-99c4-4996-a6b3-ff33bbee34f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e4251b690>]}
+[0m01:05:12.072796 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:05:12.074221 [debug] [MainThread]: Command end result
+[0m01:05:12.116697 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:05:12.119801 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:05:12.126113 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m01:05:12.128823 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.7563696, "process_in_blocks": "39896", "process_kernel_time": 0.384818, "process_mem_max_rss": "178012", "process_out_blocks": "4216", "process_user_time": 3.277898}
+[0m01:05:12.130021 [debug] [MainThread]: Command `dbt test` succeeded at 01:05:12.129756 after 1.76 seconds
+[0m01:05:12.131124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e377b7d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e4250dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x722e377b31d0>]}
+[0m01:05:12.132156 [debug] [MainThread]: Flushing usage events
+[0m01:05:12.957823 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:48.005054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6d3daba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6ee4d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6c413b10>]}
+
+
+============================== 01:05:48.009680 | 3f45ebcf-1c29-41f2-a207-42dd9110e124 ==============================
+[0m01:05:48.009680 [info ] [MainThread]: Running with dbt=1.11.3
+[0m01:05:48.010736 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'quiet': 'False', 'partial_parse': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'empty': 'None', 'profiles_dir': '/home/bihitche/.dbt', 'printer_width': '80', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'cache_selected_only': 'False', 'introspect': 'True', 'invocation_command': 'dbt test --select assert_price'}
+[0m01:05:48.488402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3f45ebcf-1c29-41f2-a207-42dd9110e124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6d0fb5c0>]}
+[0m01:05:48.629215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3f45ebcf-1c29-41f2-a207-42dd9110e124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6c4c1370>]}
+[0m01:05:48.631336 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:05:48.796658 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m01:05:48.973778 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:05:48.974454 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:05:48.975046 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:05:48.983659 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m01:05:49.063060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3f45ebcf-1c29-41f2-a207-42dd9110e124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6c325d50>]}
+[0m01:05:49.205204 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:05:49.208985 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:05:49.241202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3f45ebcf-1c29-41f2-a207-42dd9110e124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a65bec5f0>]}
+[0m01:05:49.242032 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m01:05:49.242792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f45ebcf-1c29-41f2-a207-42dd9110e124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a65a0c9f0>]}
+[0m01:05:49.243879 [warn ] [MainThread]: The selection criterion 'assert_price' does not match any enabled nodes
+[0m01:05:49.253490 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:05:49.257937 [debug] [MainThread]: Command end result
+[0m01:05:49.412700 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:05:49.416682 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:05:49.427782 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m01:05:49.430131 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.5344045, "process_in_blocks": "0", "process_kernel_time": 0.323773, "process_mem_max_rss": "142492", "process_out_blocks": "1984", "process_user_time": 3.176965}
+[0m01:05:49.431535 [debug] [MainThread]: Command `dbt test` succeeded at 01:05:49.431234 after 1.54 seconds
+[0m01:05:49.432712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6f534d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a6c415cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0a66610110>]}
+[0m01:05:49.434404 [debug] [MainThread]: Flushing usage events
+[0m01:05:50.232496 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:07:33.946681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a9331d2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a934c8d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a932207b10>]}
+
+
+============================== 01:07:33.951227 | 1a1f35f4-a4a0-46fd-8bea-c98dc1e0f48d ==============================
+[0m01:07:33.951227 [info ] [MainThread]: Running with dbt=1.11.3
+[0m01:07:33.952598 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'version_check': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/home/bihitche/.dbt', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test --select assert_price', 'no_print': 'None', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'cache_selected_only': 'False', 'warn_error': 'None', 'printer_width': '80', 'fail_fast': 'False', 'log_format': 'default', 'quiet': 'False', 'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'debug': 'False', 'introspect': 'True'}
+[0m01:07:34.357805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a1f35f4-a4a0-46fd-8bea-c98dc1e0f48d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a932eef5c0>]}
+[0m01:07:34.464886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a1f35f4-a4a0-46fd-8bea-c98dc1e0f48d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a9322b5370>]}
+[0m01:07:34.467036 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:07:34.622747 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m01:07:34.755497 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 0 files added, 0 files changed.
+[0m01:07:34.756223 [debug] [MainThread]: Partial parsing: deleted file: crypto_analytics://tests/assert_price.sql
+[0m01:07:34.831404 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m01:07:34.861047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1a1f35f4-a4a0-46fd-8bea-c98dc1e0f48d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a92c200d50>]}
+[0m01:07:34.999993 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:07:35.002572 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:07:35.032314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1a1f35f4-a4a0-46fd-8bea-c98dc1e0f48d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a9278005f0>]}
+[0m01:07:35.033013 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m01:07:35.033765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a1f35f4-a4a0-46fd-8bea-c98dc1e0f48d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a92781d1d0>]}
+[0m01:07:35.035059 [warn ] [MainThread]: The selection criterion 'assert_price' does not match any enabled nodes
+[0m01:07:35.116205 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:07:35.119249 [debug] [MainThread]: Command end result
+[0m01:07:35.163143 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:07:35.166645 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:07:35.173214 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m01:07:35.175569 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.315829, "process_in_blocks": "0", "process_kernel_time": 0.319182, "process_mem_max_rss": "142544", "process_out_blocks": "2928", "process_user_time": 2.795838}
+[0m01:07:35.176673 [debug] [MainThread]: Command `dbt test` succeeded at 01:07:35.176468 after 1.32 seconds
+[0m01:07:35.177522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a9279ebd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a932209cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72a92c5f4110>]}
+[0m01:07:35.178443 [debug] [MainThread]: Flushing usage events
+[0m01:07:36.112746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-02-12T00:11:23.833391Z | 019c4f30-2f1c-7300-a2de-ba1c0a2f530f ====================
+00:11:23.839001 [info ]: dbt-fusion 2.0.0-preview.110
+00:11:23.847086 [info ]: Started loading project
+00:11:23.892074 [info ]: Loading ~/.dbt/profiles.yml
+00:11:23.903632 [info ]: Finished loading project [  0.06s]
+00:11:23.910103 [error]: dbt1005: Failed to parse profiles.yml: unknown variant `duckdb`, expected one of `redshift`, `snowflake`, `postgres`, `bigquery`, `trino`, `datafusion`, `spark`, `databricks`, `salesforce`
+00:11:24.167361 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 1 error [333ms]
+[0m01:11:44.932827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e16fd6ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e18a35090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e1600fb10>]}
+
+
+============================== 01:11:44.936907 | c12bd7eb-2a8b-4a7f-9015-010bc5e579b6 ==============================
+[0m01:11:44.936907 [info ] [MainThread]: Running with dbt=1.11.3
+[0m01:11:44.937857 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'profiles_dir': '/home/bihitche/.dbt', 'version_check': 'True', 'cache_selected_only': 'False', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'use_colors': 'True', 'no_print': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'introspect': 'True', 'debug': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'None'}
+[0m01:11:45.285420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c12bd7eb-2a8b-4a7f-9015-010bc5e579b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e16cf75c0>]}
+[0m01:11:45.393517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c12bd7eb-2a8b-4a7f-9015-010bc5e579b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e160bd370>]}
+[0m01:11:45.395497 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:11:45.534460 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m01:11:45.641789 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m01:11:45.642578 [debug] [MainThread]: Partial parsing: added file: crypto_analytics://tests/schema.yml
+[0m01:11:45.643112 [debug] [MainThread]: Partial parsing: added file: crypto_analytics://tests/assert_price.sql
+[0m01:11:45.841502 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'assert_high_prices' in the 'data_tests' section of file 'tests/schema.yml'
+[0m01:11:45.842466 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.crypto_analytics.assert_price' (tests/assert_price.sql) depends on a node named 'stg_prices' in package '' which was not found
+[0m01:11:46.019275 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m01:11:46.043173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c12bd7eb-2a8b-4a7f-9015-010bc5e579b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e15f25550>]}
+[0m01:11:46.211986 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:11:46.214497 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:11:46.243255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c12bd7eb-2a8b-4a7f-9015-010bc5e579b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e0f79e210>]}
+[0m01:11:46.244186 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m01:11:46.245144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c12bd7eb-2a8b-4a7f-9015-010bc5e579b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e15d9fe70>]}
+[0m01:11:46.247610 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:11:46.248596 [debug] [MainThread]: Command end result
+[0m01:11:46.287049 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:11:46.289968 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:11:46.295662 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m01:11:46.297395 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.4606013, "process_in_blocks": "0", "process_kernel_time": 0.309388, "process_mem_max_rss": "144004", "process_out_blocks": "2944", "process_user_time": 2.956155}
+[0m01:11:46.298526 [debug] [MainThread]: Command `dbt test` succeeded at 01:11:46.298336 after 1.46 seconds
+[0m01:11:46.299412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e0f60fd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e16011cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e0f6084d0>]}
+[0m01:11:46.300286 [debug] [MainThread]: Flushing usage events
+[0m01:11:47.199709 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:13:44.135788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524dbd2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524f691090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524cc0bb10>]}
+
+
+============================== 01:13:44.139941 | 0cd604eb-4aa7-4aeb-b96d-9c55910374ad ==============================
+[0m01:13:44.139941 [info ] [MainThread]: Running with dbt=1.11.3
+[0m01:13:44.141185 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/bihitche/.dbt', 'warn_error': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'printer_width': '80', 'log_format': 'default', 'version_check': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'target_path': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'no_print': 'None', 'use_colors': 'True', 'introspect': 'True', 'empty': 'None', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'static_parser': 'True'}
+[0m01:13:44.531407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0cd604eb-4aa7-4aeb-b96d-9c55910374ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524d8f35c0>]}
+[0m01:13:44.695876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0cd604eb-4aa7-4aeb-b96d-9c55910374ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524ccb9370>]}
+[0m01:13:44.698360 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:13:44.876325 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m01:13:45.053137 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m01:13:45.054655 [debug] [MainThread]: Partial parsing: updated file: crypto_analytics://tests/schema.yml
+[0m01:13:45.246168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0cd604eb-4aa7-4aeb-b96d-9c55910374ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5246505d50>]}
+[0m01:13:45.484550 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:13:45.488162 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:13:45.522590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0cd604eb-4aa7-4aeb-b96d-9c55910374ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f52463c05f0>]}
+[0m01:13:45.523726 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m01:13:45.524767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0cd604eb-4aa7-4aeb-b96d-9c55910374ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524c999d30>]}
+[0m01:13:45.528411 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:13:45.530033 [debug] [MainThread]: Command end result
+[0m01:13:45.584193 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:13:45.588100 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:13:45.595044 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m01:13:45.597056 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.5504307, "process_in_blocks": "0", "process_kernel_time": 0.31529, "process_mem_max_rss": "142896", "process_out_blocks": "2960", "process_user_time": 3.052128}
+[0m01:13:45.598335 [debug] [MainThread]: Command `dbt test` succeeded at 01:13:45.598145 after 1.55 seconds
+[0m01:13:45.599357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524635fd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524cc0dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f524642ae10>]}
+[0m01:13:45.600265 [debug] [MainThread]: Flushing usage events
+[0m01:13:46.499148 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:14:02.513426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e1e7e6ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e20271090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e1d81fb10>]}
+
+
+============================== 01:14:02.518245 | 5885cc02-8c19-4572-9c2a-3710666aab6d ==============================
+[0m01:14:02.518245 [info ] [MainThread]: Running with dbt=1.11.3
+[0m01:14:02.519470 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'profiles_dir': '/home/bihitche/.dbt', 'indirect_selection': 'eager', 'empty': 'None', 'printer_width': '80', 'warn_error': 'None', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'fail_fast': 'False', 'write_json': 'True', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'debug': 'False', 'use_colors': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True'}
+[0m01:14:02.963933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5885cc02-8c19-4572-9c2a-3710666aab6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e1e5075c0>]}
+[0m01:14:03.137348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5885cc02-8c19-4572-9c2a-3710666aab6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e1d8cd370>]}
+[0m01:14:03.141143 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:14:03.315765 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m01:14:03.479292 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:14:03.480082 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:14:03.480690 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:14:03.526810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5885cc02-8c19-4572-9c2a-3710666aab6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e17119050>]}
+[0m01:14:03.680617 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:14:03.684901 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:14:03.722414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5885cc02-8c19-4572-9c2a-3710666aab6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e16ffc5f0>]}
+[0m01:14:03.723924 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m01:14:03.725380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5885cc02-8c19-4572-9c2a-3710666aab6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e16e19010>]}
+[0m01:14:03.737171 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:14:03.741550 [debug] [MainThread]: Command end result
+[0m01:14:03.895458 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m01:14:03.898400 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m01:14:03.904679 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m01:14:03.906461 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.5018507, "process_in_blocks": "0", "process_kernel_time": 0.333606, "process_mem_max_rss": "142568", "process_out_blocks": "1968", "process_user_time": 2.962508}
+[0m01:14:03.907688 [debug] [MainThread]: Command `dbt test` succeeded at 01:14:03.907452 after 1.50 seconds
+[0m01:14:03.908664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e20948d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e1d821cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792e17a08110>]}
+[0m01:14:03.909758 [debug] [MainThread]: Flushing usage events
+[0m01:14:04.828004 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:04:27.495981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79027dadeba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79027f531090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79027cb13b10>]}
+
+
+============================== 02:04:27.500214 | bd7fab02-85d4-42c0-95e2-0968367bf9a0 ==============================
+[0m02:04:27.500214 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:04:27.501518 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'log_format': 'default', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'warn_error': 'None', 'introspect': 'True', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'indirect_selection': 'eager', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt test --select assert_price', 'profiles_dir': '/home/bihitche/.dbt', 'debug': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'empty': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False'}
+[0m02:04:27.867164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bd7fab02-85d4-42c0-95e2-0968367bf9a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79027d7fb5c0>]}
+[0m02:04:27.976381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bd7fab02-85d4-42c0-95e2-0968367bf9a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79027cbc1370>]}
+[0m02:04:27.978454 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:04:28.120482 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:04:28.245105 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:04:28.245715 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m02:04:28.246445 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:04:28.254036 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m02:04:28.321651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bd7fab02-85d4-42c0-95e2-0968367bf9a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790276f05d50>]}
+[0m02:04:28.444608 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:04:28.447193 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:04:28.473619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bd7fab02-85d4-42c0-95e2-0968367bf9a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7902762685f0>]}
+[0m02:04:28.474313 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:04:28.474892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd7fab02-85d4-42c0-95e2-0968367bf9a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7902762909f0>]}
+[0m02:04:28.475764 [warn ] [MainThread]: The selection criterion 'assert_price' does not match any enabled nodes
+[0m02:04:28.477985 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:04:28.481008 [debug] [MainThread]: Command end result
+[0m02:04:28.609742 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:04:28.613830 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:04:28.618955 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:04:28.620680 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.2147466, "process_in_blocks": "1592", "process_kernel_time": 0.335441, "process_mem_max_rss": "141972", "process_out_blocks": "1992", "process_user_time": 2.864231}
+[0m02:04:28.621494 [debug] [MainThread]: Command `dbt test` succeeded at 02:04:28.621309 after 1.22 seconds
+[0m02:04:28.622133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790276287d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79027cb15cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x790276d10110>]}
+[0m02:04:28.622784 [debug] [MainThread]: Flushing usage events
+[0m02:04:29.630069 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:09:02.513668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe7f3daa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe80e951d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe7e40bd90>]}
+
+
+============================== 02:09:02.518391 | 03950835-2b17-45bb-89c6-84bf5d91940b ==============================
+[0m02:09:02.518391 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:09:02.520064 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'cache_selected_only': 'False', 'profiles_dir': '/home/bihitche/.dbt', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'introspect': 'True', 'empty': 'False', 'log_format': 'default', 'version_check': 'True', 'warn_error': 'None', 'printer_width': '80', 'use_colors': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'target_path': 'None', 'write_json': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'debug': 'False', 'log_cache_events': 'False'}
+[0m02:09:02.989672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe7f0ef490>]}
+[0m02:09:03.119963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe7e4b5260>]}
+[0m02:09:03.122657 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:09:03.308694 [debug] [MainThread]: checksum: ba0f3d264086af688758d829412b703940bf7602dd7485431960e36eb55b3cb9, vars: {}, profile: , target: duck, version: 1.11.3
+[0m02:09:03.490912 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m02:09:03.491903 [debug] [MainThread]: previous checksum: ba0f3d264086af688758d829412b703940bf7602dd7485431960e36eb55b3cb9, current checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6
+[0m02:09:03.493000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe7e31b850>]}
+[0m02:09:06.191984 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.crypto_analytics.assert_price' (tests/assert_price.sql) depends on a node named 'stg_prices' in package '' which was not found
+[0m02:09:06.370096 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m02:09:06.394368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe781f7a70>]}
+[0m02:09:06.571882 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:09:06.578361 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:09:06.823572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe72bf8d70>]}
+[0m02:09:06.824727 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:09:06.828149 [info ] [MainThread]: 
+[0m02:09:06.828992 [info ] [MainThread]: Concurrency: 4 threads (target='duck')
+[0m02:09:06.830053 [info ] [MainThread]: 
+[0m02:09:06.831666 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:09:06.834160 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_database'
+[0m02:09:06.912183 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database"
+[0m02:09:06.913641 [debug] [ThreadPool]: On list_crypto_database: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "connection_name": "list_crypto_database"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"crypto_database"'
+    
+  
+  
+[0m02:09:06.914932 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:09:22.963712 [debug] [ThreadPool]: SQL status: OK in 16.048 seconds
+[0m02:09:22.974652 [debug] [ThreadPool]: On list_crypto_database: Close
+[0m02:09:22.981502 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_crypto_database, now create_crypto_database_main)
+[0m02:09:22.985934 [debug] [ThreadPool]: Creating schema "database: "crypto_database"
+schema: "main"
+"
+[0m02:09:23.039988 [debug] [ThreadPool]: Using duckdb connection "create_crypto_database_main"
+[0m02:09:23.044074 [debug] [ThreadPool]: On create_crypto_database_main: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "connection_name": "create_crypto_database_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='crypto_database'
+        and type='sqlite'
+    
+  
+[0m02:09:23.047859 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:09:23.059404 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m02:09:23.065583 [debug] [ThreadPool]: Using duckdb connection "create_crypto_database_main"
+[0m02:09:23.066808 [debug] [ThreadPool]: On create_crypto_database_main: BEGIN
+[0m02:09:23.069646 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m02:09:23.070667 [debug] [ThreadPool]: Using duckdb connection "create_crypto_database_main"
+[0m02:09:23.072267 [debug] [ThreadPool]: On create_crypto_database_main: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "connection_name": "create_crypto_database_main"} */
+
+    
+    
+        create schema if not exists "crypto_database"."main"
+    
+[0m02:09:23.115719 [debug] [ThreadPool]: SQL status: OK in 0.042 seconds
+[0m02:09:23.118194 [debug] [ThreadPool]: On create_crypto_database_main: COMMIT
+[0m02:09:23.119370 [debug] [ThreadPool]: Using duckdb connection "create_crypto_database_main"
+[0m02:09:23.120829 [debug] [ThreadPool]: On create_crypto_database_main: COMMIT
+[0m02:09:23.160824 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m02:09:23.162363 [debug] [ThreadPool]: On create_crypto_database_main: Close
+[0m02:09:23.180902 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_crypto_database_main, now list_crypto_database_main)
+[0m02:09:23.197913 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database_main"
+[0m02:09:23.198780 [debug] [ThreadPool]: On list_crypto_database_main: BEGIN
+[0m02:09:23.200202 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:09:23.203170 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m02:09:23.204330 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database_main"
+[0m02:09:23.205574 [debug] [ThreadPool]: On list_crypto_database_main: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "connection_name": "list_crypto_database_main"} */
+select
+      'crypto_database' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_database'
+  
+[0m02:09:23.251318 [debug] [ThreadPool]: SQL status: OK in 0.044 seconds
+[0m02:09:23.253214 [debug] [ThreadPool]: On list_crypto_database_main: ROLLBACK
+[0m02:09:23.255103 [debug] [ThreadPool]: Failed to rollback 'list_crypto_database_main'
+[0m02:09:23.255820 [debug] [ThreadPool]: On list_crypto_database_main: Close
+[0m02:09:23.258350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe72ddf520>]}
+[0m02:09:23.259609 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:09:23.260290 [debug] [MainThread]: On master: BEGIN
+[0m02:09:23.261339 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:09:23.264141 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m02:09:23.264751 [debug] [MainThread]: On master: COMMIT
+[0m02:09:23.265297 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:09:23.265928 [debug] [MainThread]: On master: COMMIT
+[0m02:09:23.267137 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:09:23.267755 [debug] [MainThread]: On master: Close
+[0m02:09:23.272044 [debug] [Thread-1 (]: Began running node model.crypto_analytics.stg__prices
+[0m02:09:23.273117 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg__prices ................................... [RUN]
+[0m02:09:23.274238 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_database_main, now model.crypto_analytics.stg__prices)
+[0m02:09:23.275075 [debug] [Thread-1 (]: Began compiling node model.crypto_analytics.stg__prices
+[0m02:09:23.285258 [debug] [Thread-1 (]: Writing injected SQL for node "model.crypto_analytics.stg__prices"
+[0m02:09:23.286540 [debug] [Thread-1 (]: Began executing node model.crypto_analytics.stg__prices
+[0m02:09:23.363585 [debug] [Thread-1 (]: Writing runtime sql for node "model.crypto_analytics.stg__prices"
+[0m02:09:23.365975 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_analytics.stg__prices"
+[0m02:09:23.367653 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: BEGIN
+[0m02:09:23.368915 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:09:23.372334 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m02:09:23.373606 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_analytics.stg__prices"
+[0m02:09:23.374396 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "model.crypto_analytics.stg__prices"} */
+
+  
+  create view "crypto_database"."main"."stg__prices__dbt_tmp" as (
+    select
+    id as coin_id,
+    symbol,
+    current_price as usd_price,
+    price_change_percentage_24h as daily_change,
+    
+    now() as ingested_at 
+from "crypto_database"."crypto_raw"."raw_prices"
+  );
+
+[0m02:09:23.422667 [debug] [Thread-1 (]: SQL status: OK in 0.047 seconds
+[0m02:09:23.438672 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_analytics.stg__prices"
+[0m02:09:23.440023 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "model.crypto_analytics.stg__prices"} */
+alter view "crypto_database"."main"."stg__prices" rename to "stg__prices__dbt_backup"
+[0m02:09:23.483117 [debug] [Thread-1 (]: SQL status: OK in 0.042 seconds
+[0m02:09:23.487875 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_analytics.stg__prices"
+[0m02:09:23.488575 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "model.crypto_analytics.stg__prices"} */
+alter view "crypto_database"."main"."stg__prices__dbt_tmp" rename to "stg__prices"
+[0m02:09:23.531100 [debug] [Thread-1 (]: SQL status: OK in 0.042 seconds
+[0m02:09:23.548567 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: COMMIT
+[0m02:09:23.549651 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_analytics.stg__prices"
+[0m02:09:23.550917 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: COMMIT
+[0m02:09:23.645191 [debug] [Thread-1 (]: SQL status: OK in 0.093 seconds
+[0m02:09:23.681945 [debug] [Thread-1 (]: Using duckdb connection "model.crypto_analytics.stg__prices"
+[0m02:09:23.686740 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "model.crypto_analytics.stg__prices"} */
+
+      drop view if exists "crypto_database"."main"."stg__prices__dbt_backup" cascade
+    
+[0m02:09:23.792155 [debug] [Thread-1 (]: SQL status: OK in 0.101 seconds
+[0m02:09:23.804120 [debug] [Thread-1 (]: On model.crypto_analytics.stg__prices: Close
+[0m02:09:23.813101 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '03950835-2b17-45bb-89c6-84bf5d91940b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe72e74650>]}
+[0m02:09:23.814942 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg__prices .............................. [[32mOK[0m in 0.53s]
+[0m02:09:23.817469 [debug] [Thread-1 (]: Finished running node model.crypto_analytics.stg__prices
+[0m02:09:23.821559 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:09:23.823147 [debug] [MainThread]: On master: BEGIN
+[0m02:09:23.824592 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:09:23.827622 [debug] [MainThread]: SQL status: OK in 0.003 seconds
+[0m02:09:23.828751 [debug] [MainThread]: On master: COMMIT
+[0m02:09:23.830085 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:09:23.831327 [debug] [MainThread]: On master: COMMIT
+[0m02:09:23.833966 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m02:09:23.834990 [debug] [MainThread]: On master: Close
+[0m02:09:23.835795 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:09:23.836594 [debug] [MainThread]: Connection 'model.crypto_analytics.stg__prices' was properly closed.
+[0m02:09:23.837311 [info ] [MainThread]: 
+[0m02:09:23.838269 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 17.01 seconds (17.01s).
+[0m02:09:23.840742 [debug] [MainThread]: Command end result
+[0m02:09:23.933743 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:09:23.938008 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:09:23.954947 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:09:23.958008 [info ] [MainThread]: 
+[0m02:09:23.960712 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:09:23.963155 [info ] [MainThread]: 
+[0m02:09:23.964313 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m02:09:23.971532 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 21.610943, "process_in_blocks": "100784", "process_kernel_time": 0.602677, "process_mem_max_rss": "215840", "process_out_blocks": "4208", "process_user_time": 7.619356}
+[0m02:09:23.974164 [debug] [MainThread]: Command `cli build` succeeded at 02:09:23.973649 after 21.61 seconds
+[0m02:09:23.975935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe72b32c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe72d868f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fe72d86e90>]}
+[0m02:09:23.977452 [debug] [MainThread]: Flushing usage events
+[0m02:09:24.849161 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:14:31.637673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd28daba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd4331090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd1913b10>]}
+
+
+============================== 02:14:31.642585 | d3adf763-7a6e-4b5f-866c-4903a5ff2f1c ==============================
+[0m02:14:31.642585 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:14:31.644148 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'empty': 'None', 'version_check': 'True', 'warn_error': 'None', 'invocation_command': 'dbt test --select assert_price', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'no_print': 'None', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'introspect': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'fail_fast': 'False', 'profiles_dir': '/home/bihitche/.dbt', 'partial_parse': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True'}
+[0m02:14:32.094962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3adf763-7a6e-4b5f-866c-4903a5ff2f1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd25fb5c0>]}
+[0m02:14:32.230205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd3adf763-7a6e-4b5f-866c-4903a5ff2f1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd19c1370>]}
+[0m02:14:32.232653 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:14:32.412122 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:14:32.575931 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m02:14:32.577130 [debug] [MainThread]: previous checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, current checksum: ba0f3d264086af688758d829412b703940bf7602dd7485431960e36eb55b3cb9
+[0m02:14:32.578261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd3adf763-7a6e-4b5f-866c-4903a5ff2f1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd1827b50>]}
+[0m02:14:34.330891 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.crypto_analytics.assert_price' (tests/assert_price.sql) depends on a node named 'stg_prices' in package '' which was not found
+[0m02:14:34.460095 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds.crypto_analytics
+[0m02:14:34.473326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd3adf763-7a6e-4b5f-866c-4903a5ff2f1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfcb243200>]}
+[0m02:14:34.617913 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:14:34.620356 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:14:34.647175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd3adf763-7a6e-4b5f-866c-4903a5ff2f1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfca422510>]}
+[0m02:14:34.647845 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:14:34.648552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3adf763-7a6e-4b5f-866c-4903a5ff2f1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfca5e36c0>]}
+[0m02:14:34.649783 [warn ] [MainThread]: The selection criterion 'assert_price' does not match any enabled nodes
+[0m02:14:34.651495 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:14:34.652394 [debug] [MainThread]: Command end result
+[0m02:14:34.693841 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:14:34.696795 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:14:34.702488 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:14:34.704302 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 3.1727, "process_in_blocks": "64", "process_kernel_time": 0.354831, "process_mem_max_rss": "150120", "process_out_blocks": "2960", "process_user_time": 5.110177}
+[0m02:14:34.705381 [debug] [MainThread]: Command `dbt test` succeeded at 02:14:34.705193 after 3.17 seconds
+[0m02:14:34.706251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfd1915cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfca59f8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcfca59fb70>]}
+[0m02:14:34.707120 [debug] [MainThread]: Flushing usage events
+[0m02:14:35.635429 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:26:44.271447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f2dceba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f4781090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f1e07b10>]}
+
+
+============================== 02:26:44.277857 | a10f3ce9-0e32-401b-acb4-f78ee216f8da ==============================
+[0m02:26:44.277857 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:26:44.279098 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'printer_width': '80', 'debug': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'invocation_command': 'dbt test', 'profiles_dir': '/home/bihitche/.dbt', 'use_colors': 'True', 'write_json': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'empty': 'None', 'introspect': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_cache_events': 'False'}
+[0m02:26:44.635071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a10f3ce9-0e32-401b-acb4-f78ee216f8da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f2aef5c0>]}
+[0m02:26:44.743827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a10f3ce9-0e32-401b-acb4-f78ee216f8da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f1eb5370>]}
+[0m02:26:44.745926 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:26:44.892543 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:26:45.034256 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:26:45.034896 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m02:26:45.035375 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:26:45.089152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a10f3ce9-0e32-401b-acb4-f78ee216f8da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f1d1eb50>]}
+[0m02:26:45.229460 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:26:45.233399 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:26:45.389422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a10f3ce9-0e32-401b-acb4-f78ee216f8da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292eb5fc5f0>]}
+[0m02:26:45.390931 [info ] [MainThread]: Found 2 models, 2 data tests, 1 source, 472 macros
+[0m02:26:45.392124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a10f3ce9-0e32-401b-acb4-f78ee216f8da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292ec130e50>]}
+[0m02:26:45.396706 [info ] [MainThread]: 
+[0m02:26:45.397810 [info ] [MainThread]: Concurrency: 4 threads (target='duck')
+[0m02:26:45.398848 [info ] [MainThread]: 
+[0m02:26:45.400210 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:26:45.410318 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_database_main'
+[0m02:26:45.493901 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database_main"
+[0m02:26:45.494737 [debug] [ThreadPool]: On list_crypto_database_main: BEGIN
+[0m02:26:45.495490 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:26:46.859541 [debug] [ThreadPool]: SQL status: OK in 1.364 seconds
+[0m02:26:46.861540 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database_main"
+[0m02:26:46.863774 [debug] [ThreadPool]: On list_crypto_database_main: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "connection_name": "list_crypto_database_main"} */
+select
+      'crypto_database' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_database'
+  
+[0m02:26:46.905824 [debug] [ThreadPool]: SQL status: OK in 0.040 seconds
+[0m02:26:46.907738 [debug] [ThreadPool]: On list_crypto_database_main: ROLLBACK
+[0m02:26:46.911886 [debug] [ThreadPool]: Failed to rollback 'list_crypto_database_main'
+[0m02:26:46.912524 [debug] [ThreadPool]: On list_crypto_database_main: Close
+[0m02:26:46.914381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a10f3ce9-0e32-401b-acb4-f78ee216f8da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292eab62820>]}
+[0m02:26:46.915092 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:26:46.915593 [debug] [MainThread]: On master: BEGIN
+[0m02:26:46.916041 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:26:46.917730 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m02:26:46.918308 [debug] [MainThread]: On master: COMMIT
+[0m02:26:46.918799 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:26:46.919238 [debug] [MainThread]: On master: COMMIT
+[0m02:26:46.920248 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:26:46.920799 [debug] [MainThread]: On master: Close
+[0m02:26:46.924486 [debug] [Thread-1 (]: Began running node test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3
+[0m02:26:46.925247 [debug] [Thread-2 (]: Began running node test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d
+[0m02:26:46.926192 [info ] [Thread-1 (]: 1 of 2 START test not_null_coin_trends_symbol .................................. [RUN]
+[0m02:26:46.927012 [info ] [Thread-2 (]: 2 of 2 START test unique_coin_trends_symbol .................................... [RUN]
+[0m02:26:46.928214 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_database_main, now test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3)
+[0m02:26:46.929477 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d'
+[0m02:26:46.930522 [debug] [Thread-1 (]: Began compiling node test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3
+[0m02:26:46.931183 [debug] [Thread-2 (]: Began compiling node test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d
+[0m02:26:46.976287 [debug] [Thread-2 (]: Writing injected SQL for node "test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d"
+[0m02:26:46.984092 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3"
+[0m02:26:46.986392 [debug] [Thread-2 (]: Began executing node test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d
+[0m02:26:46.993092 [debug] [Thread-1 (]: Began executing node test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3
+[0m02:26:47.043127 [debug] [Thread-2 (]: Writing runtime sql for node "test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d"
+[0m02:26:47.044027 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3"
+[0m02:26:47.045676 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3"
+[0m02:26:47.046874 [debug] [Thread-2 (]: Using duckdb connection "test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d"
+[0m02:26:47.047438 [debug] [Thread-1 (]: On test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3: BEGIN
+[0m02:26:47.047994 [debug] [Thread-2 (]: On test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d: BEGIN
+[0m02:26:47.048573 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:26:47.049108 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m02:26:47.050886 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m02:26:47.051587 [debug] [Thread-2 (]: Using duckdb connection "test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d"
+[0m02:26:47.052173 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m02:26:47.052729 [debug] [Thread-2 (]: On test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    symbol as unique_field,
+    count(*) as n_records
+
+from "crypto_database"."main"."coin_trends"
+where symbol is not null
+group by symbol
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m02:26:47.053312 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3"
+[0m02:26:47.054220 [debug] [Thread-1 (]: On test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select symbol
+from "crypto_database"."main"."coin_trends"
+where symbol is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m02:26:47.110110 [debug] [Thread-1 (]: SQL status: OK in 0.055 seconds
+[0m02:26:47.110961 [debug] [Thread-2 (]: SQL status: OK in 0.057 seconds
+[0m02:26:47.116748 [debug] [Thread-1 (]: On test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3: ROLLBACK
+[0m02:26:47.118898 [debug] [Thread-2 (]: On test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d: ROLLBACK
+[0m02:26:47.119923 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3'
+[0m02:26:47.120554 [debug] [Thread-1 (]: On test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3: Close
+[0m02:26:47.121477 [debug] [Thread-2 (]: Failed to rollback 'test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d'
+[0m02:26:47.122541 [info ] [Thread-1 (]: 1 of 2 PASS not_null_coin_trends_symbol ........................................ [[32mPASS[0m in 0.19s]
+[0m02:26:47.123350 [debug] [Thread-2 (]: On test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d: Close
+[0m02:26:47.124619 [debug] [Thread-1 (]: Finished running node test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3
+[0m02:26:47.126139 [error] [Thread-2 (]: 2 of 2 FAIL 98 unique_coin_trends_symbol ....................................... [[31mFAIL 98[0m in 0.20s]
+[0m02:26:47.127209 [debug] [Thread-2 (]: Finished running node test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d
+[0m02:26:47.129664 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:26:47.130760 [debug] [MainThread]: On master: BEGIN
+[0m02:26:47.131290 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:26:47.133691 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m02:26:47.134798 [debug] [MainThread]: On master: COMMIT
+[0m02:26:47.135880 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:26:47.136526 [debug] [MainThread]: On master: COMMIT
+[0m02:26:47.137867 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:26:47.138599 [debug] [MainThread]: On master: Close
+[0m02:26:47.139322 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:26:47.139926 [debug] [MainThread]: Connection 'test.crypto_analytics.not_null_coin_trends_symbol.a210310fa3' was properly closed.
+[0m02:26:47.140566 [debug] [MainThread]: Connection 'test.crypto_analytics.unique_coin_trends_symbol.9d1ad4b33d' was properly closed.
+[0m02:26:47.141262 [info ] [MainThread]: 
+[0m02:26:47.142163 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 1.74 seconds (1.74s).
+[0m02:26:47.144259 [debug] [MainThread]: Command end result
+[0m02:26:47.188636 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:26:47.192026 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:26:47.205595 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:26:47.206412 [info ] [MainThread]: 
+[0m02:26:47.207325 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:26:47.208163 [info ] [MainThread]: 
+[0m02:26:47.209099 [error] [MainThread]: [31mFailure in test unique_coin_trends_symbol (models/marts/schema.yml)[0m
+[0m02:26:47.210048 [error] [MainThread]:   Got 98 results, configured to fail if != 0
+[0m02:26:47.210822 [info ] [MainThread]: 
+[0m02:26:47.215227 [info ] [MainThread]:   compiled code at target/compiled/crypto_analytics/models/marts/schema.yml/unique_coin_trends_symbol.sql
+[0m02:26:47.216117 [info ] [MainThread]: 
+[0m02:26:47.217114 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m02:26:47.218916 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 3.0374846, "process_in_blocks": "85264", "process_kernel_time": 0.481978, "process_mem_max_rss": "188268", "process_out_blocks": "2072", "process_user_time": 4.308866}
+[0m02:26:47.220843 [debug] [MainThread]: Command `dbt test` failed at 02:26:47.220598 after 3.04 seconds
+[0m02:26:47.222376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292f1e09cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292eabc1440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7292eabc1390>]}
+[0m02:26:47.223675 [debug] [MainThread]: Flushing usage events
+[0m02:26:48.310736 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:27:23.876262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2ed8deba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2ef345090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2ec917b10>]}
+
+
+============================== 02:27:23.880483 | 2b559bcd-cdc8-4f0c-b110-36eecd57e2a4 ==============================
+[0m02:27:23.880483 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:27:23.881379 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'log_cache_events': 'False', 'profiles_dir': '/home/bihitche/.dbt', 'static_parser': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'use_colors': 'True', 'invocation_command': 'dbt test', 'fail_fast': 'False', 'empty': 'None', 'write_json': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'version_check': 'True'}
+[0m02:27:24.275647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b559bcd-cdc8-4f0c-b110-36eecd57e2a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2ed5ff5c0>]}
+[0m02:27:24.436727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b559bcd-cdc8-4f0c-b110-36eecd57e2a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2ec9c5370>]}
+[0m02:27:24.439734 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:27:24.666778 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:27:24.896019 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:27:24.897176 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m02:27:24.898051 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:27:24.975742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b559bcd-cdc8-4f0c-b110-36eecd57e2a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2e6d07b50>]}
+[0m02:27:25.183628 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:27:25.186682 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:27:25.218233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b559bcd-cdc8-4f0c-b110-36eecd57e2a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2e60905f0>]}
+[0m02:27:25.219072 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:27:25.220139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b559bcd-cdc8-4f0c-b110-36eecd57e2a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2e60b51d0>]}
+[0m02:27:25.223375 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:27:25.227263 [debug] [MainThread]: Command end result
+[0m02:27:25.405196 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:27:25.407961 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:27:25.414743 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:27:25.416946 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.6383241, "process_in_blocks": "0", "process_kernel_time": 0.32634, "process_mem_max_rss": "142380", "process_out_blocks": "1992", "process_user_time": 3.097247}
+[0m02:27:25.418241 [debug] [MainThread]: Command `dbt test` succeeded at 02:27:25.417958 after 1.64 seconds
+[0m02:27:25.419278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2e61fb520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2ec919cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a2e6b14110>]}
+[0m02:27:25.420355 [debug] [MainThread]: Flushing usage events
+[0m02:27:26.199096 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:29:03.214857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd848acaba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd84a585090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd847b03b10>]}
+
+
+============================== 02:29:03.218953 | 9d6cd84d-357b-432b-97ed-66fe1fbf496e ==============================
+[0m02:29:03.218953 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:29:03.220170 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/bihitche/.dbt', 'cache_selected_only': 'False', 'static_parser': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'quiet': 'False', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'partial_parse': 'True', 'use_colors': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt test --select assert_valid_price_range', 'indirect_selection': 'eager', 'empty': 'None', 'write_json': 'True'}
+[0m02:29:03.569254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d6cd84d-357b-432b-97ed-66fe1fbf496e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8487eb5c0>]}
+[0m02:29:03.679963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d6cd84d-357b-432b-97ed-66fe1fbf496e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd847bb1370>]}
+[0m02:29:03.682568 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:29:03.823941 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:29:03.959577 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:29:03.960378 [debug] [MainThread]: Partial parsing: updated file: crypto_analytics://tests/schema.yml
+[0m02:29:03.988464 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'assert_valid_price_range' in the 'data_tests' section of file 'tests/schema.yml'
+[0m02:29:04.127849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9d6cd84d-357b-432b-97ed-66fe1fbf496e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8415f4e50>]}
+[0m02:29:04.342766 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:29:04.346001 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:29:04.376179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9d6cd84d-357b-432b-97ed-66fe1fbf496e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd8412f45f0>]}
+[0m02:29:04.376945 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:29:04.377586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d6cd84d-357b-432b-97ed-66fe1fbf496e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd841f67310>]}
+[0m02:29:04.378491 [warn ] [MainThread]: The selection criterion 'assert_valid_price_range' does not match any enabled nodes
+[0m02:29:04.380338 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:29:04.381490 [debug] [MainThread]: Command end result
+[0m02:29:04.422096 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:29:04.425547 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:29:04.432009 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:29:04.434028 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.3071597, "process_in_blocks": "0", "process_kernel_time": 0.299969, "process_mem_max_rss": "143224", "process_out_blocks": "2976", "process_user_time": 2.851711}
+[0m02:29:04.435202 [debug] [MainThread]: Command `dbt test` succeeded at 02:29:04.434998 after 1.31 seconds
+[0m02:29:04.436107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd84123fd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd847b05cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dd841f63350>]}
+[0m02:29:04.437259 [debug] [MainThread]: Flushing usage events
+[0m02:29:05.327326 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:29:54.650100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb71caba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb8c35090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb6203b10>]}
+
+
+============================== 02:29:54.656589 | 3cbc9256-3540-4dde-869a-a508a1408339 ==============================
+[0m02:29:54.656589 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:29:54.658354 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'invocation_command': 'dbt test --select assert_valid_price_range', 'fail_fast': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'profiles_dir': '/home/bihitche/.dbt', 'quiet': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'write_json': 'True', 'introspect': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'static_parser': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True'}
+[0m02:29:55.097266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cbc9256-3540-4dde-869a-a508a1408339', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb6eeb5c0>]}
+[0m02:29:55.237174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cbc9256-3540-4dde-869a-a508a1408339', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb62b1370>]}
+[0m02:29:55.240152 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:29:55.418338 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:29:55.590478 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 0 files added, 0 files changed.
+[0m02:29:55.716569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cbc9256-3540-4dde-869a-a508a1408339', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb03f4c50>]}
+[0m02:29:55.876429 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:29:55.879609 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:29:55.915107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cbc9256-3540-4dde-869a-a508a1408339', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfab9b45f0>]}
+[0m02:29:55.915927 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:29:55.916798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cbc9256-3540-4dde-869a-a508a1408339', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfab9d5630>]}
+[0m02:29:55.918223 [warn ] [MainThread]: The selection criterion 'assert_valid_price_range' does not match any enabled nodes
+[0m02:29:55.999058 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:29:56.004315 [debug] [MainThread]: Command end result
+[0m02:29:56.056729 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:29:56.061065 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:29:56.069076 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:29:56.071007 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.5449175, "process_in_blocks": "0", "process_kernel_time": 0.374243, "process_mem_max_rss": "142244", "process_out_blocks": "2968", "process_user_time": 3.479664}
+[0m02:29:56.072086 [debug] [MainThread]: Command `dbt test` succeeded at 02:29:56.071898 after 1.55 seconds
+[0m02:29:56.072980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb01d0120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb6205cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccfb05ec650>]}
+[0m02:29:56.073995 [debug] [MainThread]: Flushing usage events
+[0m02:29:56.833677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:31:48.761842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4261bd2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4263585090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4260c0bb10>]}
+
+
+============================== 02:31:48.766995 | 64c61d0e-72cd-47e0-8f34-8e011b007cf8 ==============================
+[0m02:31:48.766995 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:31:48.768616 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt test --select assert_valid_price_range', 'static_parser': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'debug': 'False', 'profiles_dir': '/home/bihitche/.dbt', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'use_colors': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'log_format': 'default', 'empty': 'None', 'printer_width': '80'}
+[0m02:31:49.177212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64c61d0e-72cd-47e0-8f34-8e011b007cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b42618f35c0>]}
+[0m02:31:49.289048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64c61d0e-72cd-47e0-8f34-8e011b007cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4260cb9370>]}
+[0m02:31:49.291071 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:31:49.443966 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:31:49.579988 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m02:31:49.580549 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m02:31:49.581024 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m02:31:49.621281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64c61d0e-72cd-47e0-8f34-8e011b007cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4260b1bb50>]}
+[0m02:31:49.764398 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:31:49.767247 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:31:49.793787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64c61d0e-72cd-47e0-8f34-8e011b007cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b425a3885f0>]}
+[0m02:31:49.794863 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:31:49.795757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64c61d0e-72cd-47e0-8f34-8e011b007cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b425a3ad1d0>]}
+[0m02:31:49.796947 [warn ] [MainThread]: The selection criterion 'assert_valid_price_range' does not match any enabled nodes
+[0m02:31:49.799204 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:31:49.802502 [debug] [MainThread]: Command end result
+[0m02:31:49.937594 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:31:49.940759 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:31:49.945231 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:31:49.947130 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.2763208, "process_in_blocks": "0", "process_kernel_time": 0.307097, "process_mem_max_rss": "142488", "process_out_blocks": "1992", "process_user_time": 2.816725}
+[0m02:31:49.947924 [debug] [MainThread]: Command `dbt test` succeeded at 02:31:49.947766 after 1.28 seconds
+[0m02:31:49.948515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b425a4f7520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4260c0dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b425aff4110>]}
+[0m02:31:49.949108 [debug] [MainThread]: Flushing usage events
+[0m02:31:50.804389 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:34:15.290466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b88cd6ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b8a741090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b87d0bb10>]}
+
+
+============================== 02:34:15.294642 | 891d4e8e-9e1f-4050-a12d-304e81d04c82 ==============================
+[0m02:34:15.294642 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:34:15.295637 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'invocation_command': 'dbt test --select assert_valid_price_range', 'warn_error': 'None', 'no_print': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'use_colors': 'True', 'static_parser': 'True', 'empty': 'None', 'profiles_dir': '/home/bihitche/.dbt', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m02:34:15.659778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '891d4e8e-9e1f-4050-a12d-304e81d04c82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b889f35c0>]}
+[0m02:34:15.768140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '891d4e8e-9e1f-4050-a12d-304e81d04c82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b87db9370>]}
+[0m02:34:15.770265 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:34:15.917542 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:34:16.053310 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:34:16.054230 [debug] [MainThread]: Partial parsing: updated file: crypto_analytics://tests/assert_valid_price_range.sql
+[0m02:34:16.220867 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.crypto_analytics.assert_valid_price_range' (tests/assert_valid_price_range.sql) depends on a node named 'stg_prices' in package '' which was not found
+[0m02:34:16.346124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '891d4e8e-9e1f-4050-a12d-304e81d04c82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b817fda50>]}
+[0m02:34:16.572012 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:34:16.574891 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:34:16.602002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '891d4e8e-9e1f-4050-a12d-304e81d04c82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b814d5f40>]}
+[0m02:34:16.602721 [info ] [MainThread]: Found 2 models, 1 source, 472 macros
+[0m02:34:16.603307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '891d4e8e-9e1f-4050-a12d-304e81d04c82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b820def90>]}
+[0m02:34:16.604252 [warn ] [MainThread]: The selection criterion 'assert_valid_price_range' does not match any enabled nodes
+[0m02:34:16.606013 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:34:16.606961 [debug] [MainThread]: Command end result
+[0m02:34:16.644203 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:34:16.647728 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:34:16.654735 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:34:16.656746 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.4532207, "process_in_blocks": "0", "process_kernel_time": 0.298537, "process_mem_max_rss": "143504", "process_out_blocks": "2976", "process_user_time": 3.024315}
+[0m02:34:16.657889 [debug] [MainThread]: Command `dbt test` succeeded at 02:34:16.657694 after 1.45 seconds
+[0m02:34:16.658824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b814dbd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b87d0dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d7b87d0cad0>]}
+[0m02:34:16.659693 [debug] [MainThread]: Flushing usage events
+[0m02:34:17.543549 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:34:57.699161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae65fc2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae67a7d090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae64ffbb10>]}
+
+
+============================== 02:34:57.705724 | 05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f ==============================
+[0m02:34:57.705724 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:34:57.707009 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'use_colors': 'True', 'profiles_dir': '/home/bihitche/.dbt', 'warn_error': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt test --select assert_valid_price_range', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'target_path': 'None', 'empty': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'printer_width': '80'}
+[0m02:34:58.089788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae65ce35c0>]}
+[0m02:34:58.198615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae650a9370>]}
+[0m02:34:58.200618 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:34:58.348875 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:34:58.486902 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:34:58.487720 [debug] [MainThread]: Partial parsing: updated file: crypto_analytics://tests/assert_valid_price_range.sql
+[0m02:34:58.738713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae5f1f1650>]}
+[0m02:34:58.950436 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:34:58.952806 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:34:58.979839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae5e7c5f40>]}
+[0m02:34:58.980946 [info ] [MainThread]: Found 2 models, 1 test, 1 source, 472 macros
+[0m02:34:58.981798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae5f3c74d0>]}
+[0m02:34:58.983928 [info ] [MainThread]: 
+[0m02:34:58.984696 [info ] [MainThread]: Concurrency: 4 threads (target='duck')
+[0m02:34:58.985265 [info ] [MainThread]: 
+[0m02:34:58.986116 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:34:58.995001 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_crypto_database_main'
+[0m02:34:59.063183 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database_main"
+[0m02:34:59.064394 [debug] [ThreadPool]: On list_crypto_database_main: BEGIN
+[0m02:34:59.065170 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:35:00.367622 [debug] [ThreadPool]: SQL status: OK in 1.302 seconds
+[0m02:35:00.371101 [debug] [ThreadPool]: Using duckdb connection "list_crypto_database_main"
+[0m02:35:00.375040 [debug] [ThreadPool]: On list_crypto_database_main: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "connection_name": "list_crypto_database_main"} */
+select
+      'crypto_database' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'crypto_database'
+  
+[0m02:35:00.432117 [debug] [ThreadPool]: SQL status: OK in 0.054 seconds
+[0m02:35:00.434047 [debug] [ThreadPool]: On list_crypto_database_main: ROLLBACK
+[0m02:35:00.435272 [debug] [ThreadPool]: Failed to rollback 'list_crypto_database_main'
+[0m02:35:00.435815 [debug] [ThreadPool]: On list_crypto_database_main: Close
+[0m02:35:00.437655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05778cd1-ae2f-4a6c-a8a3-986dc7f81e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae5dd3f450>]}
+[0m02:35:00.438519 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:35:00.439061 [debug] [MainThread]: On master: BEGIN
+[0m02:35:00.439546 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:35:00.441189 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m02:35:00.441792 [debug] [MainThread]: On master: COMMIT
+[0m02:35:00.442327 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:35:00.442882 [debug] [MainThread]: On master: COMMIT
+[0m02:35:00.444025 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:35:00.444647 [debug] [MainThread]: On master: Close
+[0m02:35:00.448248 [debug] [Thread-1 (]: Began running node test.crypto_analytics.assert_valid_price_range
+[0m02:35:00.449400 [info ] [Thread-1 (]: 1 of 1 START test assert_valid_price_range ..................................... [RUN]
+[0m02:35:00.450492 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_crypto_database_main, now test.crypto_analytics.assert_valid_price_range)
+[0m02:35:00.451595 [debug] [Thread-1 (]: Began compiling node test.crypto_analytics.assert_valid_price_range
+[0m02:35:00.463320 [debug] [Thread-1 (]: Writing injected SQL for node "test.crypto_analytics.assert_valid_price_range"
+[0m02:35:00.465001 [debug] [Thread-1 (]: Began executing node test.crypto_analytics.assert_valid_price_range
+[0m02:35:00.506445 [debug] [Thread-1 (]: Writing runtime sql for node "test.crypto_analytics.assert_valid_price_range"
+[0m02:35:00.507882 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_analytics.assert_valid_price_range"
+[0m02:35:00.508882 [debug] [Thread-1 (]: On test.crypto_analytics.assert_valid_price_range: BEGIN
+[0m02:35:00.509775 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:35:00.512223 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m02:35:00.513167 [debug] [Thread-1 (]: Using duckdb connection "test.crypto_analytics.assert_valid_price_range"
+[0m02:35:00.514077 [debug] [Thread-1 (]: On test.crypto_analytics.assert_valid_price_range: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "test.crypto_analytics.assert_valid_price_range"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select 
+    symbol,
+    high_24h,
+    low_24h
+from "crypto_database"."main"."stg__prices"
+where high_24h < low_24h   -- ❌ No semicolon here!
+  
+  
+      
+    ) dbt_internal_test
+[0m02:35:00.564278 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.3", "profile_name": "brahim", "target_name": "duck", "node_id": "test.crypto_analytics.assert_valid_price_range"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select 
+    symbol,
+    high_24h,
+    low_24h
+from "crypto_database"."main"."stg__prices"
+where high_24h < low_24h   -- ❌ No semicolon here!
+  
+  
+      
+    ) dbt_internal_test
+[0m02:35:00.565544 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m02:35:00.566558 [debug] [Thread-1 (]: On test.crypto_analytics.assert_valid_price_range: ROLLBACK
+[0m02:35:00.580319 [debug] [Thread-1 (]: Failed to rollback 'test.crypto_analytics.assert_valid_price_range'
+[0m02:35:00.581372 [debug] [Thread-1 (]: On test.crypto_analytics.assert_valid_price_range: Close
+[0m02:35:00.587422 [debug] [Thread-1 (]: Runtime Error in test assert_valid_price_range (tests/assert_valid_price_range.sql)
+  Binder Error: Referenced column "high_24h" not found in FROM clause!
+  Candidate bindings: "ingested_at", "coin_id"
+  
+  LINE 15: where high_24h < low_24h   -- ❌ No semicolon here!
+                 ^
+[0m02:35:00.588221 [error] [Thread-1 (]: 1 of 1 ERROR assert_valid_price_range .......................................... [[31mERROR[0m in 0.14s]
+[0m02:35:00.589124 [debug] [Thread-1 (]: Finished running node test.crypto_analytics.assert_valid_price_range
+[0m02:35:00.590162 [debug] [Thread-7 (]: Marking all children of 'test.crypto_analytics.assert_valid_price_range' to be skipped because of status 'error'.  Reason: Runtime Error in test assert_valid_price_range (tests/assert_valid_price_range.sql)
+  Binder Error: Referenced column "high_24h" not found in FROM clause!
+  Candidate bindings: "ingested_at", "coin_id"
+  
+  LINE 15: where high_24h < low_24h   -- ❌ No semicolon here!
+                 ^.
+[0m02:35:00.593654 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:35:00.594628 [debug] [MainThread]: On master: BEGIN
+[0m02:35:00.595649 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:35:00.597844 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m02:35:00.598453 [debug] [MainThread]: On master: COMMIT
+[0m02:35:00.599351 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:35:00.599896 [debug] [MainThread]: On master: COMMIT
+[0m02:35:00.601307 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:35:00.602323 [debug] [MainThread]: On master: Close
+[0m02:35:00.603100 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:35:00.603632 [debug] [MainThread]: Connection 'test.crypto_analytics.assert_valid_price_range' was properly closed.
+[0m02:35:00.604193 [info ] [MainThread]: 
+[0m02:35:00.604782 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 1.62 seconds (1.62s).
+[0m02:35:00.606426 [debug] [MainThread]: Command end result
+[0m02:35:00.656017 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/manifest.json
+[0m02:35:00.659432 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/semantic_manifest.json
+[0m02:35:00.671396 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bihitche/Desktop/crypto_pipeline_sprint/analytics/target/run_results.json
+[0m02:35:00.672321 [info ] [MainThread]: 
+[0m02:35:00.673228 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:35:00.674178 [info ] [MainThread]: 
+[0m02:35:00.675183 [error] [MainThread]: [31mFailure in test assert_valid_price_range (tests/assert_valid_price_range.sql)[0m
+[0m02:35:00.676292 [error] [MainThread]:   Runtime Error in test assert_valid_price_range (tests/assert_valid_price_range.sql)
+  Binder Error: Referenced column "high_24h" not found in FROM clause!
+  Candidate bindings: "ingested_at", "coin_id"
+  
+  LINE 15: where high_24h < low_24h   -- ❌ No semicolon here!
+                 ^
+[0m02:35:00.677429 [info ] [MainThread]: 
+[0m02:35:00.678518 [info ] [MainThread]:   compiled code at target/compiled/crypto_analytics/tests/assert_valid_price_range.sql
+[0m02:35:00.680074 [info ] [MainThread]: 
+[0m02:35:00.680945 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m02:35:00.683564 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 3.1101341, "process_in_blocks": "5616", "process_kernel_time": 0.420045, "process_mem_max_rss": "189536", "process_out_blocks": "3016", "process_user_time": 4.690338}
+[0m02:35:00.685624 [debug] [MainThread]: Command `dbt test` failed at 02:35:00.685280 after 3.11 seconds
+[0m02:35:00.686597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae64ffdcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae5dda9860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae5dda9020>]}
+[0m02:35:00.687584 [debug] [MainThread]: Flushing usage events
+[0m02:35:01.476000 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:37:36.581744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f41fd2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f43a55090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f4100bb10>]}
+
+
+============================== 02:37:36.587072 | 624ad5db-1ce0-40df-ae77-e57a56c6732b ==============================
+[0m02:37:36.587072 [info ] [MainThread]: Running with dbt=1.11.3
+[0m02:37:36.588454 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'profiles_dir': '/home/bihitche/.dbt', 'static_parser': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'empty': 'False', 'debug': 'False', 'invocation_command': 'dbt run', 'log_path': '/home/bihitche/Desktop/crypto_pipeline_sprint/analytics/logs', 'log_cache_events': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_colors': 'True', 'version_check': 'True'}
+[0m02:37:37.079788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '624ad5db-1ce0-40df-ae77-e57a56c6732b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f41cf35c0>]}
+[0m02:37:37.217683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '624ad5db-1ce0-40df-ae77-e57a56c6732b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f410b9370>]}
+[0m02:37:37.220018 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:37:37.391721 [debug] [MainThread]: checksum: 97dbd983c77ef3cec7304d97135f72c53ee20ea7ab68d67bae8e0876ff0fcdb6, vars: {}, profile: , target: , version: 1.11.3
+[0m02:37:37.555025 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m02:37:37.555967 [debug] [MainThread]: Partial parsing: updated file: crypto_analytics://models/staging/stg__prices.sql
+[0m02:37:37.932540 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.crypto_analytics.stg__prices' (models/staging/stg__prices.sql) depends on a source named 'crypto_raw.raw_prices' which was not found
+[0m02:37:37.934284 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.4976566, "process_in_blocks": "0", "process_kernel_time": 0.341178, "process_mem_max_rss": "143968", "process_out_blocks": "8", "process_user_time": 3.127466}
+[0m02:37:37.935537 [debug] [MainThread]: Command `dbt run` failed at 02:37:37.935310 after 1.50 seconds
+[0m02:37:37.936243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f40f23350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f40f21950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750f3a8f59a0>]}
+[0m02:37:37.937064 [debug] [MainThread]: Flushing usage events
+[0m02:37:38.766603 [debug] [MainThread]: An error was encountered while trying to flush usage events
