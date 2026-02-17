@@ -1,6 +1,6 @@
 # Crypto Data Engineering Sprint: End-to-End Pipeline
 
-**Developer:** YOUR NAME
+**Developer:** Brahim 
 
 ---
 
@@ -10,7 +10,7 @@ This project implements a production-grade ELT pipeline that extracts live crypt
 
 ## Developer & Stack
 
-- **Developer:** YOUR NAME
+- **Developer:** askiou 
 - **Stack:** Python, dlt, dbt, MotherDuck, Pydantic, uv
 
 ## Configuration & Credentials
